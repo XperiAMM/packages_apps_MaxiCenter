@@ -2,23 +2,23 @@
 <!--
  *=========================================================================
  *
- *  PROJECT:  SlimRoms
- *            Team Slimroms (http://www.slimroms.net)
+ *  PROJECT:  MaxiCM
+ *            MaxiCM Team (http://www.MaxiCM.com)
  *
- *  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+ *  COPYRIGHT Copyright (C) 2013 MaxiCM Team http://www.MaxiCM.com
  *            All rights reserved
  *
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
- *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: SlimCenter: manage your ROM
+ *  AUTHORS:     XperiAMM, MaxiCM Team
+ *  DESCRIPTION: MaxiCenter: manage your ROM
  *
  *=========================================================================
  *
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.slim.ota"
+    package="com.maxi.ota"
     android:versionCode="1"
     android:versionName="1.1" >
 
@@ -35,12 +35,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_slimota"
+        android:icon="@mipmap/ic_launcher_maxiota"
         android:label="@string/app_name"
         android:launchMode="singleTask"
-        android:theme="@style/SlimOTA" >
+        android:theme="@style/MaxiOTA" >
         <activity
-            android:name="com.slim.center.SlimCenter"
+            android:name="com.maxi.center.MaxiCenter"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
@@ -48,22 +48,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.slim.ota.SlimOTA"
+            android:name="com.maxi.ota.MaxiOTA"
             android:label="@string/ota_title"
-            android:parentActivityName="com.slim.center.SlimCenter" >
+            android:parentActivityName="com.maxi.center.MaxiCenter" >
         </activity>
         <activity
-            android:name="com.slim.sizer.SlimSizer"
+            android:name="com.maxi.sizer.MaxiSizer"
             android:label="@string/sizer_title"
-            android:parentActivityName="com.slim.center.SlimCenter" >
+            android:parentActivityName="com.maxi.center.MaxiCenter" >
         </activity>
         <activity
-            android:name="com.slim.center.AboutSlim"
-            android:label="@string/aboutslim_title"
-            android:parentActivityName="com.slim.center.SlimCenter" >
+            android:name="com.maxi.center.AboutMaxi"
+            android:label="@string/aboutmaxi_title"
+            android:parentActivityName="com.maxi.center.MaxiCenter" >
         </activity>
 
-        <service android:name="com.slim.ota.updater.UpdateService" />
+        <service android:name="com.maxi.ota.updater.UpdateService" />
 
         <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver" >
             <intent-filter>
@@ -83,12 +83,12 @@
         </receiver>
 
         <activity
-            android:name="com.slim.ota.settings.Settings"
-            android:parentActivityName="com.slim.ota.SlimOTA">
+            android:name="com.maxi.ota.settings.Settings"
+            android:parentActivityName="com.maxi.ota.MaxiOTA">
         </activity>
         <activity
-            android:name="com.slim.ota.settings.About"
-            android:parentActivityName="com.slim.center.SlimCenter">
+            android:name="com.maxi.ota.settings.About"
+            android:parentActivityName="com.maxi.center.MaxiCenter">
         </activity>
     </application>
 
