@@ -1,26 +1,26 @@
 /*=========================================================================
  *
- *  PROJECT:  SlimRoms
- *            Team Slimroms (http://www.slimroms.net)
+ *  PROJECT:  MaxiCM
+ *            MaxiCM Team (http://www.MaxiCM.com)
  *
- *  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+ *  COPYRIGHT Copyright (C) 2015 MaxiCM http://www.MaxiCM.com
  *            All rights reserved
  *
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
- *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: SlimCenter: manage your ROM
+ *  AUTHORS:     MaxiCM Team, XperiAMM
+ *  DESCRIPTION: MaxiCenter: manage your ROM
  *
  *=========================================================================
  */
-package com.slim.center;
+package com.maxi.center;
 
 import java.util.Locale;
 
-import com.slim.ota.R;
-import com.slim.ota.SlimOTA;
-import com.slim.ota.settings.About;
-import com.slim.sizer.SlimSizer;
+import com.maxi.ota.R;
+import com.maxi.ota.MaxiOTA;
+import com.maxi.ota.settings.About;
+import com.maxi.sizer.MaxiSizer;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -34,14 +34,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class SlimCenter extends FragmentActivity implements
+public class MaxiCenter extends FragmentActivity implements
 ActionBar.TabListener{
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.slim_center);
+        setContentView(R.layout.maxi_center);
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
@@ -116,7 +116,7 @@ ActionBar.TabListener{
             Locale l = Locale.getDefault();
             switch (position) {
             case 0:
-                return getString(R.string.aboutslim_title).toUpperCase(l);                
+                return getString(R.string.aboutmaxi_title).toUpperCase(l);                
             case 1:
                 return getString(R.string.ota_title).toUpperCase(l);                
             case 2:
@@ -128,11 +128,11 @@ ActionBar.TabListener{
         public android.support.v4.app.Fragment getItem(int page) {
             switch (page) {
             case 0:
-                return new AboutSlim();                
+                return new AboutMaxi();                
             case 1:
-                return new SlimOTA();                
+                return new MaxiOTA();                
             case 2:
-                return new SlimSizer();
+                return new MaxiSizer();
             }
             return null;
         }
@@ -141,7 +141,7 @@ ActionBar.TabListener{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.slim_center, menu);
+        inflater.inflate(R.menu.maxi_center, menu);
         return true;
     }
 

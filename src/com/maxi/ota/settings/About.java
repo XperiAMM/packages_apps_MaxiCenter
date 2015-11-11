@@ -1,20 +1,20 @@
 /*=========================================================================
  *
- *  PROJECT:  SlimRoms
- *            Team Slimroms (http://www.slimroms.net)
+ *  PROJECT:  MaxiCM
+ *            MaxiCM Team (http://www.MaxiCM.com)
  *
- *  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+ *  COPYRIGHT Copyright (C) 2015 MaxiCM http://www.MaxiCM.com
  *            All rights reserved
  *
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
- *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: SlimOTA keeps our rom up to date
+ *  AUTHORS:     MaxiCM Team, XperiAMM
+ *  DESCRIPTION: MaxiOTA keeps our rom up to date
  *
  *=========================================================================
  */
 
-package com.slim.ota.settings;
+package com.maxi.ota.settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -25,8 +25,8 @@ import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.slim.center.SlimCenter;
-import com.slim.ota.R;
+import com.maxi.center.MaxiCenter;
+import com.maxi.ota.R;
 
 public class About extends Activity {
     @SuppressWarnings("unused")

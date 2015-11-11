@@ -1,20 +1,20 @@
 /*=========================================================================
  *
- *  PROJECT:  SlimRoms
- *            Team Slimroms (http://www.slimroms.net)
+ *  PROJECT:  MaxiCM
+ *            MaxiCM Team (http://www.MaxiCM.com)
  *
- *  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+ *  COPYRIGHT Copyright (C) 2015 MaxiCM http://www.MaxiCM.com
  *            All rights reserved
  *
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
- *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: SlimOTA keeps our rom up to date
+ *  AUTHORS:     MaxiCM Team, XperiAMM
+ *  DESCRIPTION: MaxiOTA keeps our rom up to date
  *
  *=========================================================================
  */
 
-package com.slim.ota.updater;
+package com.maxi.ota.updater;
 
 import android.content.Intent;
 import android.util.Log;
@@ -31,7 +31,7 @@ public class UpdateService extends WakefulIntentService {
     }
 
     public UpdateService() {
-        super("SlimOtaService");
+        super("MaxiOtaService");
     }
 
     /* (non-Javadoc)
@@ -39,7 +39,7 @@ public class UpdateService extends WakefulIntentService {
      */
     @Override
     protected void doWakefulWork(Intent intent) {
-       if (mNoLog == false) Log.d(TAG, "Slim OTA Update service called!");
+       if (mNoLog == false) Log.d(TAG, "Maxi OTA Update service called!");
        UpdateChecker otaChecker = new UpdateChecker();
        otaChecker.execute(getBaseContext());
     }

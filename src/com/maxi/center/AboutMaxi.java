@@ -1,22 +1,22 @@
 /*=========================================================================
  *
- *  PROJECT:  SlimRoms
- *            Team Slimroms (http://www.slimroms.net)
+ *  PROJECT:  MaxiCM
+ *            MaxiCM Team (http://www.MaxiCM.com)
  *
- *  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+ *  COPYRIGHT Copyright (C) 2015 MaxiCM http://www.MaxiCM.com
  *            All rights reserved
  *
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
- *  AUTHORS:     fronti90, blk_jack
- *  DESCRIPTION: SlimCenter: manage your ROM
+ *  AUTHORS:     MaxiCM Team, XperiAMM
+ *  DESCRIPTION: MzxiCenter: manage your ROM
  *
  *=========================================================================
  */
-package com.slim.center;
+package com.maxi.center;
 
-import com.slim.ota.R;
-import com.slim.sizer.SlimSizer;
+import com.maxi.ota.R;
+import com.maxi.sizer.MaxiSizer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -51,9 +51,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.android.internal.util.slim.BuildInfo;
+import com.android.internal.util.maxi.BuildInfo;
 
-public class AboutSlim extends Fragment{
+public class AboutMaxi extends Fragment{
 
     private LinearLayout website;
     private LinearLayout source;
@@ -64,7 +64,7 @@ public class AboutSlim extends Fragment{
     private boolean su=false;
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String LOG_TAG = "DeviceInfoSettings";
-    private static Intent IRC_INTENT = new Intent(Intent.ACTION_VIEW, Uri.parse("ccircslim:1"));
+    private static Intent IRC_INTENT = new Intent(Intent.ACTION_VIEW, Uri.parse("ccircmaxi:1"));
     public File path;
     public String zipfile;
     public String logfile;
@@ -76,7 +76,7 @@ public class AboutSlim extends Fragment{
     byte[] buf = new byte[1024];
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.slim_about, container, false);
+        View view = inflater.inflate(R.layout.maxi_about, container, false);
         return view;
     }
 
@@ -84,16 +84,16 @@ public class AboutSlim extends Fragment{
         @Override
         public void onClick(View v) {
             if (v == website) {
-                launchUrl("http://slimroms.net/");
+                launchUrl("http://MaxiCM.com/");
             } else if (v == source) {
-                launchUrl("http://github.com/SlimRoms");
+                launchUrl("http://github.com/MaxiCM");
             } else if (v == donate) {
-                launchUrl("http://www.slimroms.net/index.php/donations");
+                launchUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B2K7L3S9Q6VRJ");
             } else if (v == irc) {
                 if (isCallable(IRC_INTENT)){
                     startActivity(IRC_INTENT);
                 } else {
-                    if (BuildInfo.getSlimBuildType().equals("UNOFFICIAL")) {
+                    if (BuildInfo.getMaxiBuildType().equals("OFFICIAL")) {
                         ircDialog();
                     } else {
                         toast(getResources().getString(R.string.no_irc));
@@ -111,19 +111,19 @@ public class AboutSlim extends Fragment{
 
         //set LinearLayouts and onClickListeners
 
-        website = (LinearLayout) getView().findViewById(R.id.slim_website);
+        website = (LinearLayout) getView().findViewById(R.id.maxi_website);
         website.setOnClickListener(mActionLayouts);
 
-        source = (LinearLayout) getView().findViewById(R.id.slim_source);
+        source = (LinearLayout) getView().findViewById(R.id.maxi_source);
         source.setOnClickListener(mActionLayouts);
 
-        donate = (LinearLayout) getView().findViewById(R.id.slim_donate);
+        donate = (LinearLayout) getView().findViewById(R.id.maxi_donate);
         donate.setOnClickListener(mActionLayouts);
 
-        irc = (LinearLayout) getView().findViewById(R.id.slim_irc);
+        irc = (LinearLayout) getView().findViewById(R.id.maxi_irc);
         irc.setOnClickListener(mActionLayouts);
 
-        report = (LinearLayout) getView().findViewById(R.id.slim_bugreport);
+        report = (LinearLayout) getView().findViewById(R.id.maxi_bugreport);
         report.setOnClickListener(mActionLayouts);
         //request su
         try {
@@ -179,16 +179,16 @@ public class AboutSlim extends Fragment{
          }
         String kernel=getFormattedKernelVersion();
         //check if sdcard is available
-        SlimSizer sizer=new SlimSizer();
+        MaxiSizer sizer=new MaxiSizer();
         short state = sizer.sdAvailable();
         //initialize logfiles
         File extdir = Environment.getExternalStorageDirectory();
-        path = new File(extdir.getAbsolutePath().replace("emulated/0", "emulated/legacy") + "/Slim/Bugreport");
+        path = new File(extdir.getAbsolutePath().replace("emulated/0", "emulated/legacy") + "/Maxi/Bugreport");
         File savefile = new File(path + "/system.log");
         File logcat = new File(path + "/logcat.log");
         File last_kmsg = new File(path + "/last_kmsg.log");
         File kmsg = new File(path + "/kmsg.log");
-        File zip = new File(Environment.getExternalStorageDirectory() + "/Slim/bugreport.zip");
+        File zip = new File(Environment.getExternalStorageDirectory() + "/Maxi/bugreport.zip");
         systemfile = savefile.toString();
         logfile = logcat.toString();
         last_kmsgfile = last_kmsg.toString();
