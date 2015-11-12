@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- * Copyright (C) 2014 SlimRoms
+ * Copyright (C) 2015 MaxiCM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 -->
 
 <resources>
-    <style name="SlimOTABaseTheme" parent="android:Theme.Holo">
+    <style name="MaxiOTABaseTheme" parent="android:Theme.Holo">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -24,11 +24,11 @@
         -->
     </style>
 
-    <!-- SlimOTA theme. -->
-    <style name="SlimOTA" parent="SlimOTABaseTheme">
+    <!-- MaxiOTA theme. -->
+    <style name="MaxiOTA" parent="MaxiOTABaseTheme">
          <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <style name="slimMedium" parent="@android:style/TextAppearance.Medium">
+    <style name="maxiMedium" parent="@android:style/TextAppearance.Medium">
         <item name="android:textStyle">normal</item>
     </style>
  </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- * Copyright (C) 2014 SlimRoms
+ * Copyright (C) 2015 MaxiCM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 -->
 
 <resources>
-    <!-- SlimOTA main strings -->
-    <string name="app_name">SlimCenter</string>
+    <!-- MaxiOTA main strings -->
+    <string name="app_name">MaxiCenter</string>
     <string name="menu_settings">Settings</string>
     <string name="device_title">Device</string>
     <string name="device_name_title">Name:</string>
@@ -30,15 +30,15 @@
     <string name="device_info_title">Device Information</string>
     <string name="up_to_date_title">Your system is up to date</string>
     <string name="no_data_title">No data connection available</string>
-    <string name="error_reading_title">Cannot read SlimOTA properties</string>
+    <string name="error_reading_title">Cannot read MaxiOTA properties</string>
     <string name="update_file_title">Update:</string>
-    <string name="ota_title">SlimOTA</string>
+    <string name="ota_title">MaxiOTA</string>
     <string name="reboot">All done! Reboot your device now.</string>
     <string name="reboot_ok">Reboot now</string>
     <string name="reboot_cancel">Don\'t reboot</string>
 
-    <!-- SlimOTA settings -->
-    <string name="settings_title">SlimOTA Settings</string>
+    <!-- MaxiOTA settings -->
+    <string name="settings_title">MaxiOTA Settings</string>
     <string name="about_title">About</string>
     <string name="update_interval_title">Automatic update check interval</string>
     <string name="update_interval_summary">Set automatic update check interval</string>
@@ -47,56 +47,56 @@
     <string name="update_interval_hour">Every hour</string>
     <string name="update_interval_disable">Disable</string>
 
-    <!-- SlimOTA error messages -->
+    <!-- MaxiOTA error messages -->
     <string name="system_prop_error">Cannot read system properties</string>
-    <string name="bad_url">Unable to get to download area.\nPlease inform your slim device maintainer!</string>
+    <string name="bad_url">Unable to get to download area.\nPlease inform your MaxiCM device maintainer!</string>
     <string name="menu_update">Look for Updates now</string>
     <string name="toast_text">Looking for ROM updates, please wait.</string>
     <string name="toast_no_data_text">No data connection. Please turn on</string>
 
-    <!-- SlimOTA shortcut fragment -->
+    <!-- MaxiOTA shortcut fragment -->
     <string name="short_cut_release_title">ROM related</string>
     <string name="short_cut_changelog_title">Changelog</string>
     <string name="short_cut_changelog_summary_update_available">Important!!! Read changelog and install instructions carefully</string>
-    <string name="short_cut_download_summary_update_available">New SlimRom update available. Download here!</string>
+    <string name="short_cut_download_summary_update_available">New MaxiCM update available. Download here!</string>
     <string name="short_cut_changelog_summary">Show changelogs and install instructions</string>
     <string name="short_cut_additional_title">Additional</string>
     <string name="short_cut_faq_title">FAQ</string>
-    <string name="short_cut_faq_summary">Show Slim FAQ</string>
+    <string name="short_cut_faq_summary">Show Maxi FAQ</string>
     <string name="short_cut_news_title">News</string>
-    <string name="short_cut_news_summary">Read about latest Slim news</string>
-    <string name="short_cut_download_title">Download SlimRom</string>
-    <string name="short_cut_download_uptodate_summary">Download SlimRom</string>
+    <string name="short_cut_news_summary">Read about latest MaxiCM news</string>
+    <string name="short_cut_download_title">Download MaxiCM</string>
+    <string name="short_cut_download_uptodate_summary">Download MaxiCM</string>
     <string name="short_cut_download_gapps_title">Download gapps</string>
-    <string name="short_cut_download_gapps_summary">Download SlimRoms addon packages</string>
+    <string name="short_cut_download_gapps_summary">Download maxiCM addon packages</string>
 
-    <string name="download_url" translatable="false">http://otaslim.slimroms.net/download.htm</string>
-    <string name="changelog_url" translatable="false">http://otaslim.slimroms.net/changelog.htm</string>
-    <string name="faq_url" translatable="false">http://www.slimroms.net/index.php/faqandmanual</string>
-    <string name="news_url" translatable="false">http://otaslim.slimroms.net/news.htm</string>
-    <string name="gapps_url" translatable="false">http://otaslim.slimroms.net/gapps.htm</string>
-    <string name="gapps_url_kitkat" translatable="false">http://otaslim.slimroms.net/gapps_kitkat.htm</string>
+    <string name="download_url" translatable="false">http://maxicm.com</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/MaxiCM/CHANGELOG/master/changelog.mkdn</string>
+    <string name="faq_url" translatable="false">andresmora1676@gmail.com</string>
+    <string name="news_url" translatable="false">http://maxicm.com</string>
+    <string name="gapps_url" translatable="false">https://github.com/maxicm-ota-server/OTA-Gapps/blob/master/Maxi-5.1.x-Gapps.zip?raw=true</string>
+    <string name="gapps_url_kitkat" translatable="false"></string>
 
-    <!-- SlimOTA update checker -->
-    <string name="xml_url" translatable="false">http://otaslim.slimroms.net/ota.xml</string>
-    <string name="xml_url_kitkat" translatable="false">http://otaslim.slimroms.net/ota_kitkat.xml</string>
-    <string name="notification_message">SlimRom update available</string>
+    <!-- MaxiOTA update checker -->
+    <string name="xml_url" translatable="false">http://maxicm-ota-server.github.io/ota.xml</string>
+    <string name="xml_url_kitkat" translatable="false"></string>
+    <string name="notification_message">MaxiCM update available</string>
 
-    <!-- SlimOTA About -->
-    <string name="about_home_url" translatable="false"><a href="http://www.slimroms.net">www.slimroms.net</a></string>
-    <string name="about_slim_ota">SlimCenter allows you to easily manage\n your ROM!</string>
-    <string name="about_copyright" translatable="false">\u00A9 Copyright SlimRoms 2014</string>
-    <string name="about_version" translatable="false">SlimCenter 1.1</string>
-    <string name="about_contact"><a href="http://otaslim.slimroms.net/contact.htm">Contact us</a></string>
+    <!-- MaxiOTA About -->
+    <string name="about_home_url" translatable="false"><a href="http://www.maxicm.com">www.MaxiCM.com</a></string>
+    <string name="about_maxi_ota">MaxiCenter allows you to easily manage\n your ROM!</string>
+    <string name="about_copyright" translatable="false">\u00A9 Copyright MaxiCM 2015</string>
+    <string name="about_version" translatable="false">MaxiCenter 1.1</string>
+    <string name="about_contact"><a href="andresmora1676@gmail.com">Contact us</a></string>
     <string name="about_contact_text">Tell us what you think\nor let us know about a bug or problem</string>
     <string name="about_license">Open source licenses</string>
-    <string name="about_license_text">SlimCenter app:</string>
-    <string name="about_license_url" translatable="false"><a href="http://otaslim.slimroms.net/license.htm">gpl(2)</a></string>
-    <string name="menu_slimsizer">SlimSizer</string>
+    <string name="about_license_text">MaxiCenter app:</string>
+    <string name="about_license_url" translatable="false"><a href="">gpl(2)</a></string>
+    <string name="menu_maxisizer">MaxiSizer</string>
 
-    <!-- SlimSizer  -->
+    <!-- MaxiSizer  -->
     <string name="listsystem">list</string>
-    <string name="sizer_title">SlimSizer</string>
+    <string name="sizer_title">MaxiSizer</string>
     <string name="caution">Caution!</string>
     <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
     <string name="cancel">Cancel</string>
@@ -118,22 +118,22 @@
     <string name="sizer_profile_save">Save Profile</string>
 
     <!-- About -->
-    <string name="aboutslim_title">SlimRoms</string>
+    <string name="aboutmaxi_title">MaxiCM</string>
     <string name="devs">Developer</string>
-    <string name="slim_website_title">Slim Website</string>
-    <string name="slim_website_summary">www.slimroms.net\nFind all latest Slim news here</string>
-    <string name="slim_irc_title">SlimIRC</string>
-    <string name="slim_irc_summary">Join our IRC channel!\nChat with the Slim Team and other users</string>
-    <string name="slim_donate_title">Donate</string>
-    <string name="slim_donate_summary">Donate to Team SlimRoms</string>
-    <string name="slim_source_title">Slim Source</string>
-    <string name="slim_source_summary">SlimRoms are fully open source.\nSource at github.com/SlimRoms</string>
-    <string name="no_irc">SlimIRC App not found.</string>
-    <string name="no_irc_unofficial">SlimIRC is not available on unofficial builds.</string>
-    <string name="center_summary"><b>SlimCenter</b> provides tools &amp; information to help make your experience with SlimRoms even better. Upgrade automatically to the newest version of our ROM with <b>SlimOTA</b> and remove unwanted system apps with <b>SlimSizer</b>.</string>
-    <string name="slim_bugreport">Bugreport</string>
-    <string name="slim_bugreport_summary">Create a complete Bugreport.</string>
-    <string name="report_infosuccess">Created Systemreport, provide it to Team SlimRoms by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"Slim\".</string>
+    <string name="maxi_website_title">MaxiCM Website</string>
+    <string name="maxi_website_summary">www.maxicm.com\nFind all latest MaxiCM news here</string>
+    <string name="maxi_irc_title">MaxiCM IRC</string>
+    <string name="maxi_irc_summary">Join our IRC channel!\nChat with the MaxiCM Team and other users</string>
+    <string name="maxi_donate_title">Donate</string>
+    <string name="maxi_donate_summary">Donate to MaxiCM Team</string>
+    <string name="maxi_source_title">MaxiCM Source</string>
+    <string name="maxi_source_summary">MaxiCM are fully open source.\nSource at github.com/MaxiCM</string>
+    <string name="no_irc">MaxiCM IRC App not found.</string>
+    <string name="no_irc_unofficial">MaxiCM IRC is not available on unofficial builds.</string>
+    <string name="center_summary"><b>MaxiCenter</b> provides tools &amp; information to help make your experience with MaxiCM even better. Upgrade automatically to the newest version of our ROM with <b>MaxiOTA</b> and remove unwanted system apps with <b>MaxiSizer</b>.</string>
+    <string name="maxi_bugreport">Bugreport</string>
+    <string name="maxi_bugreport_summary">Create a complete Bugreport.</string>
+    <string name="report_infosuccess">Created Systemreport, provide it to MaxiCM Team by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"maxi\".</string>
     <string name="report_infofail">Failed to create Bugreport, please try again.</string>
 
 </resources>

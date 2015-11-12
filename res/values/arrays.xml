@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- * Copyright (C) 2014 SlimRoms
+ * Copyright (C) 2015 MaxiCM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="slimsizer_profile_array" translatable="false">
+    <string-array name="maxisizer_profile_array" translatable="false">
         <item>>@string/sizer_profile_load</item>
         <item>>@string/sizer_profile_save</item>
     </string-array>
